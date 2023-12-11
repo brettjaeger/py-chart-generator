@@ -2,7 +2,7 @@ import plotly.express as px
 import pandas as pd
 
 input("Please collect your columns in the clipboard")
-graph_type = input("Graph type: Scatter=s Line=l")
+graph_type = input("Graph type: Scatter=s Line=l [s,l] ")
 
 data = pd.read_clipboard(sep='\t')
 try:
