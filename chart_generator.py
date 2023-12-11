@@ -8,9 +8,11 @@ data = pd.read_clipboard(sep='\t')
 
 if graph_type == 's':
     fig = px.scatter(data, x=data.columns[0], y=data.columns[1], color=data.columns[2], symbol=data.columns[2])
+    fig.show()
 elif graph_type == 'l':
     fig = px.line(data, x=data.columns[0], y=data.columns[1], color=data.columns[2], symbol=data.columns[2])
+    fig.show()
 else:
     print("Graph type error")
-fig.show()
+
 
